@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.nusantara {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.nusantara p {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20vh;
+}
+
+.nusantara h1 {
+    font-size: 13vh;
+    position: relative;
+    text-align: center;
+    top: 10vh;
+    color: #f9f9f9;
+}
+
+.logo2 {
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    bottom: 50vh;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15;
+}
+
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
+    background-size: 100% 5px; /* Mengatur tinggi oval */
+    background-position: 0 100%; /* Memposisikan oval di bagian bawah */
+    background-repeat: no-repeat; /* Menghindari pengulangan background */
+    padding-bottom: 5px;
+}

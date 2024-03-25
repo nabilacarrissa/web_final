@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/ghibli-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/ghibli-background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.team-gacor{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+.team-gacor .container{
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10vh;   
+}
+.team-gacor .container .row{
+    width: 60%;
+    margin: auto;
+}
+.team-gacor .container .row .title{
+    text-align: center;
+    margin-top: 50px;
+}
+.team-gacor .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.team-gacor .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #fff;
+}
+.team-gacor .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: auto;
+}
+.team-gacor .container .team-card .card{
+    width: 60%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+    margin: auto;
+    transition: transform 0.5s;
+}
+.team-gacor .container .team-card .card:hover{
+    transform: translateY(-10px)
+}
+.team-gacor .container .team-card .card .image-section img{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/circle.jpg'); /* Ganti dengan path menuju gambar yang ingin digunakan */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Membuat border berbentuk lingkaran */
+    border: 6px solid transparent;
+}
+.team-gacor .container .team-card .card .content{
+    width: 100%;
+    text-align: center;
+}
+.team-gacor .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.team-gacor .container .team-card .card .content h4{
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #639ab8;
+}
+.team-gacor .container .team-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5px;
+    color: #fff;
+}
+@media screen and (max-width: 900px){
+    .team-gacor .container .team-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .team-gacor .container .team-card{
+        grid-template-columns:1fr;
+    }
+}
+/* Navbar styles */
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16;
+}
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
+    background-size: 100% 5px; /* Mengatur tinggi oval */
+    background-position: 0 100%; /* Memposisikan oval di bagian bawah */
+    background-repeat: no-repeat; /* Menghindari pengulangan background */
+    padding-bottom: 5px; /* Memberikan ruang untuk oval */
+}
